@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap"
+      rel="stylesheet"
+         />
+         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="city"></h1>
+      <h2></h2>
+      <h3>
+        <span class="temperature" id="temperature">🌧 23 °C</span></span>
+      </h3>
+      <img src="src/kharkiv.jpg" />
+      <div class="weather-app">
+        <form class="search-form" id="search-form">
+          <div class="row">
+            <div class="col-6">
+              <input
+                type="search"
+                placeholder="Type a city.."
+                autofocus="on"
+                autocomplete="off"
+                id="city-input"
+                class="form-control shadow-sm"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="Search"
+                class="form-control btn btn-primary shadow-sm w-100"
+              />
+            </div>
+            <div class="col-3">
+              <button
+                class="btn btn-success w-100"
+                id="current-location-button"
+              >
+                Current
+              </button>
+            </div>
+          </div>
+        </form>
+
+       
+      <div class="row" id="days">
+        <div class="col-sm">Mon</div>
+        <div class="col-sm">Tue</div>
+        <div class="col-sm">Wed</div>
+        <div class="col-sm">Thu</div>
+        <div class="col-sm">Fri</div>
+        <div class="col-sm">Sat</div>
+        <div class="col-sm">Sun</div>
+      </div>
+      <div class="row" id="emojys">
+        <div class="col-sm">⛅</div>
+        <div class="col-sm">⛅</div>
+        <div class="col-sm">⛅</div>
+        <div class="col-sm">🌦</div>
+        <div class="col-sm">🌧</div>
+        <div class="col-sm">⛅</div>
+        <div class="col-sm">⛅</div>
+      </div>
+      <div class="row" id="temperature">
+        <div class="col-sm">15°/7°</div>
+        <div class="col-sm">18°/8°</div>
+        <div class="col-sm">22°/11°</div>
+        <div class="col-sm">23°/12°</div>
+        <div class="col-sm">21°/12°</div>
+        <div class="col-sm">21°/11°</div>
+        <div class="col-sm">22°/12°</div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
