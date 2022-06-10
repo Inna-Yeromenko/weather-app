@@ -1,0 +1,55 @@
+.container {
+  background: linear-gradient(to top, #fff0b1 0%, #ace0f9 100%);
+  max-width: 600px;
+  border: 2px solid #939aa9;
+  margin: 20px;
+  border-radius: 25px;
+}
+h1 {
+  text-align: center;
+  color: #885df2;
+}
+h2,
+h3 {
+  text-align: center;
+}
+#fahrenheit {
+  transition: all 200ms ease-in-out;
+}
+#fahrenheit:hover {
+  font-weight: 600;
+  cursor: pointer;
+}
+img {
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+form {
+  margin-block: 24px;
+  display: block;
+}
+#inputCity {
+  border-radius: 25px;
+  background-color: #eeeeee;
+  text-align: center;
+}
+button {
+  background-color: #eeeeee;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  border-radius: 25px;
+}
+#days {
+  font-size: 20px;
+  line-height: 2.4em;
+  font-family: "PT Mono", monospace;
+}
+#emojys {
+  line-height: 2.4em;
+  font-size: 24px;
+}
+#temperature {
+  line-height: 2.4em;
+}
